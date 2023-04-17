@@ -24,6 +24,7 @@ async function(accessToken, refreshToken, profile, done) {
       userName: profile.displayName,
       email: profile.emails[0].value,
       source:"Google",
+      accessToken:accessToken,
       UptimeStart:"100 %",
       UptimeEnd:"30 %",
       BandwidthStart:"1000 Mbps",

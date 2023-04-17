@@ -17,6 +17,7 @@ const UserSchema = new mongoose.Schema({
   source:{
     type: String
   },
+  accessToken:{type:String},
   UptimeStart:{type:String},
   UptimeEnd:{type:String},
   BandwidthStart:{type:String},
