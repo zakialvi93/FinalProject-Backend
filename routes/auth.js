@@ -177,7 +177,7 @@ router.post("/signin",(req,res)=>{
           if(match)
           {
               
-                  const token = jwt.sign({_id:savedUser.id,userName: savedUser.userName},JWT_SECRET);
+                  const token = jwt.sign({_id:savedUser.id,userName: savedUser.userName, email:savedUser.email},JWT_SECRET);
                   const { 
                     _id,
                     userName,
